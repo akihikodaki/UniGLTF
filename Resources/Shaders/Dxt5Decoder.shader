@@ -43,7 +43,7 @@
 			{
 				fixed4 col = tex2D(_MainTex, i.uv);
 
-				col.xyz = (UnpackNormal(col) + 1) * 0.5;
+				col.xyz = (UnpackNormalDXT5nm(col) + 1) * 0.5;
 				col.z = 1;
 
 				return col;
